@@ -1,5 +1,6 @@
 {
-  "name": "my-portfolio",
+  "name": "florian-dehe",
+  "homepage": "https://florian-dehe.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,6 +20,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -43,6 +46,7 @@
   },
   "devDependencies": {
     "postcss-scss": "^4.0.4",
+    "gh-pages": "^4.0.0",
     "sass": "^1.54.2",
     "stylelint-config-recommended-scss": "^7.0.0",
     "stylelint-config-standard-scss": "^5.0.0"
