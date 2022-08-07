@@ -1,0 +1,21 @@
+{
+  "data" : {
+    "global": [
+      { "id": 0, "name": "Test driven development" },
+      { "id": 1, "name": "Agile Software Development" }
+    ],
+    "technologies": [
+      { "id": 0, "name": "OpenGL" },
+      { "id": 1, "name": "Unity3D / Godot" },
+      { "id": 2, "name": "React.js" },
+      { "id": 3, "name": "Android" },
+      { "id": 4, "name": "Linux" },
+      { "id": 5, "name": "Git / Subversion" }
+    ],
+    "programming": [
+      { "id": 0, "name": "Java / C++ / C#", "level": 0.80 },
+      { "id": 1, "name": "Python", "level": 0.80 },
+      { "id": 2, "name": "Javascipt / Web (HTML, CSS)", "level": 0.70 }
+    ]
+  }
+}
