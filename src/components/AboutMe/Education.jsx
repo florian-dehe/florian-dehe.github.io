@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"
+
 import './Education.scss'
 
 function EducationItem( { itemData } ) {
@@ -10,13 +13,14 @@ function EducationItem( { itemData } ) {
       </div>
       <div>
         <h2 className="edu-item-title">{itemData.title}</h2>
-        <p className="edu-item-subtitle">{itemData.location} | {itemData.time}</p>
+        <p className="edu-item-subtitle"><FontAwesomeIcon icon={solid("location-dot")}/>  {itemData.location}</p>
+        <p className="edu-item-subtitle"><FontAwesomeIcon icon={solid("calendar")}/>  {itemData.time}</p>
         <ul className="edu-item-desc">
           { itemData.description.map(
             (desc) => <li key={desc.id}>{desc.name}</li>
           ) }
         </ul>
-        <a className="edu-item-link btn" href={itemData.link}>Link</a>
+        <a className="edu-item-link btn" href={itemData.link} target="_blank" rel="noreferrer">Link <FontAwesomeIcon icon={solid("up-right-from-square")} /> </a>
       </div>
     </div>
   );

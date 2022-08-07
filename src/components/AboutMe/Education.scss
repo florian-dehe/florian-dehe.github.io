@@ -5,13 +5,14 @@
 
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .edu-item-logo {
     margin-right: 2rem;
     background-color: white;
     max-width: 20rem;
+    align-self: center;
 }
 
 .edu-item-logo img {
@@ -20,10 +21,12 @@
 
 .edu-item-title {
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .edu-item-subtitle {
     margin-top: 0.1rem;
+    margin-bottom: 0;
     color: base.$color-secondary;
 }
 
