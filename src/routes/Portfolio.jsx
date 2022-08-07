@@ -2,7 +2,7 @@
 function Porfolio() {
   return (
     <div>
-      Porfolio
+      <h1 className="title">About this porfolio</h1>
     </div>
     );
 }

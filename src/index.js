@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import reportWebVitals from './reportWebVitals';
 
 // React router
@@ -12,7 +12,7 @@ import Home from './routes/Home';
 import Projects from './routes/Projects';
 import Portfolio from './routes/Portfolio';
 import AboutMe from './routes/AboutMe';
-import Hobbys from './routes/Hobbys';
+import Hobbies from './routes/Hobbies';
 import Contact from './routes/Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,7 +24,7 @@ root.render(
         <Route path="projects" element={ <Projects /> } />
         <Route path="portfolio" element={ <Portfolio /> } />
         <Route path="about-me" element={ <AboutMe /> } />
-        <Route path="hobbys" element={ <Hobbys /> } />
+        <Route path="hobbies" element={ <Hobbies /> } />
         <Route path="contact" element={ <Contact /> } />
       </Route>
     </Routes>

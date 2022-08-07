@@ -2,7 +2,7 @@
 function Projects() {
   return (
     <div>
-      Projects
+      <h1 className="title">Projects</h1>
     </div>
   );
 }

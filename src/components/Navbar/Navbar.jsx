@@ -8,7 +8,7 @@ function Navbar() {
       <NavbarLink title="Home" route="/" />
       <NavbarLink title="About me" route="/about-me" />
       <NavbarLink title="Projects" route="/projects" />
-      <NavbarLink title="Hobbys" route="/hobbys" />
+      <NavbarLink title="Hobbies" route="/hobbies" />
       <NavbarLink title="About this portfolio" route="/portfolio" />
       <NavbarLink title="Contact" route="/contact" />
     </nav>

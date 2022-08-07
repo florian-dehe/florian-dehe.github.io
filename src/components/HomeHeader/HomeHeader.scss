@@ -1,0 +1,28 @@
+.home-main {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10%;
+}
+
+.home-intro {
+    font-size: 4rem;
+}
+
+.home-name {
+    font-size: 10rem;
+    font-weight: bold;
+}
+
+.home-discover-btn {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 2rem;
+}
+
+.home-discover-btn .btn {
+    font-size: larger;
+}

@@ -1,9 +1,10 @@
 
+import HomeHeader from '../components/HomeHeader/HomeHeader'
+
+
 function Home() {
   return (
-    <div>
-      Home
-    </div>
+   <HomeHeader />
   );
 }
 
