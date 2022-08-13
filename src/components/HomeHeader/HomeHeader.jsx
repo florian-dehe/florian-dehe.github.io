@@ -1,19 +1,19 @@
-import { Link } from 'react-router-dom'
-
-import './HomeHeader.scss'
+import { LinkContainer } from "react-router-bootstrap"
 
 function HomeHeader() {
   return (
-    <div className="home-main">
-      <div>
-        <div className="home-intro">
+    <div className="d-flex justify-content-center h-75">
+      <div className="my-auto">
+        <h2>
           Hi, my name is
-        </div>
-        <div className="home-name">
+        </h2>
+        <h1 className="display-1">
           Florian Dehé
-        </div>
-        <div className="home-discover-btn">
-          <Link to='/about-me' className="btn">Discover who I am</Link>
+        </h1>
+        <div className="d-flex justify-content-center">
+          <LinkContainer to="/about-me">
+            <button type="button" className="btn btn-primary">Discover who I am</button>
+          </LinkContainer>
         </div>
       </div>
     </div>

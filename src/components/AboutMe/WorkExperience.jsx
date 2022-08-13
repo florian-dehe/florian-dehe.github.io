@@ -13,7 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"
 
 
-function EducationItemModal(props) {
+function WorkExperienceItemModal(props) {
   return (
     <Modal { ...props } size="lg" centered>
       <Modal.Header closeButton>
@@ -27,13 +27,19 @@ function EducationItemModal(props) {
 
         <div>
           <p className="mb-2">
+            <strong><FontAwesomeIcon icon={solid("briefcase")}/> Job title : </strong>  {props.itemData.job_title}
+          </p>
+          <p className="mb-2">
+            <strong><FontAwesomeIcon icon={solid("building")}/> Company : </strong>  {props.itemData.company}
+          </p>
+          <p className="mb-2">
+            <strong><FontAwesomeIcon icon={solid("building")}/> Service : </strong>  {props.itemData.service}
+          </p>
+          <p className="mb-2">
             <strong><FontAwesomeIcon icon={solid("location-dot")}/> Location : </strong>  {props.itemData.location}
           </p>
           <p className="mb-2">
             <strong><FontAwesomeIcon icon={solid("calendar")}/>  Duration : </strong> {props.itemData.time}
-          </p>
-          <p className="mb-2">
-            <strong><FontAwesomeIcon icon={solid("book-open")}/>  Diploma : </strong> {props.itemData.diploma}
           </p>
         </div>
 
@@ -48,10 +54,6 @@ function EducationItemModal(props) {
           </p>
         </div>
 
-        <Button variant="primary" target="_blank" rel="noreferrer" href={props.itemData.link}>
-          Link <FontAwesomeIcon icon={solid("arrow-up-right-from-square")} />
-        </Button>
-
       </Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={props.onHide}>
@@ -62,7 +64,7 @@ function EducationItemModal(props) {
   );
 }
 
-function EducationItem( { itemData } ) {
+function WorkExperienceItem( { itemData } ) {
 
   const [ showModal, setShowModal ] = useState(false);
 
@@ -79,6 +81,7 @@ function EducationItem( { itemData } ) {
           <Col>
             <Card.Body>
               <Card.Title className="mb-3">{ itemData.title }</Card.Title>
+              <Card.Subtitle className="text-muted mb-2"><FontAwesomeIcon icon={solid("building")}/>  {itemData.company}</Card.Subtitle>
               <Card.Subtitle className="text-muted mb-2"><FontAwesomeIcon icon={solid("location-dot")}/>  {itemData.location}</Card.Subtitle>
               <Card.Subtitle className="text-muted mb-2"><FontAwesomeIcon icon={solid("calendar")}/>  {itemData.time}</Card.Subtitle>
               <Button variant="primary" className="mt-3" onClick={handleShow}>
@@ -88,18 +91,18 @@ function EducationItem( { itemData } ) {
           </Col>
         </Row>
       </Card>
-      <EducationItemModal show={showModal} onHide={handleClose} itemData={itemData} />
+      <WorkExperienceItemModal show={showModal} onHide={handleClose} itemData={itemData} />
   </>
   );
 }
 
-function Education() {
+function WorkExperience() {
 
   const [educationData, setEducationData] = useState([]);
 
   useEffect( () => {
 
-    fetch('json-api/education.json')
+    fetch('json-api/work_experience.json')
       .then((response) => response.json())
       .then((data) => setEducationData(data.data));
 
@@ -108,10 +111,10 @@ function Education() {
   return (
     <div className="mt-3 mx-auto" style={{ maxWidth: "55rem" }}>
     { educationData.map(
-      (item) => <EducationItem key={item.id} itemData={item}/>
+      (item) => <WorkExperienceItem key={item.id} itemData={item}/>
     ) }
     </div>
   );
 }
 
-export default Education;
+export default WorkExperience;

@@ -1,5 +1,9 @@
 import { useEffect, useState } from 'react';
+import Container from "react-bootstrap/Container"
+
 import Education from '../components/AboutMe/Education'
+import WorkExperience from '../components/AboutMe/WorkExperience'
+import Skills from "../components/AboutMe/Skills"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"
@@ -15,31 +19,29 @@ function AboutMe() {
   },[])
 
   return (
-    <div className="container">
-      <h1 className="title">About me</h1>
+    <Container className="mt-5" fluid="md">
+      <h1 className="display-3 text-center py-5 mt-5">About me</h1>
 
-      <div className="text">
+      <div className="fs-4 text-justify">
         {profile}
       </div>
 
-      <div>
-        <h2 className="subtitle"><FontAwesomeIcon icon={solid("gears")} /> Skills</h2>
-        <div>
-          My skills
-        </div>
+      <div className="my-5">
+        <h2 className="display-5"><FontAwesomeIcon icon={solid("gears")} /> Skills</h2>
+        <Skills />
       </div>
 
-      <div>
-        <h2 className="subtitle"><FontAwesomeIcon icon={solid("graduation-cap")} /> Education</h2>
+      <div className="my-5">
+        <h2 className="display-5"><FontAwesomeIcon icon={solid("graduation-cap")} /> Education</h2>
         <Education />
       </div>
 
-      <div>
-        <h2 className="subtitle"><FontAwesomeIcon icon={solid("briefcase")} /> Work Experience</h2>
-        <div>My work experience</div>
+      <div className="my-5">
+        <h2 className="display-5"><FontAwesomeIcon icon={solid("briefcase")} /> Work Experience</h2>
+        <WorkExperience />
       </div>
 
-    </div>
+    </Container>
   );
 }
 

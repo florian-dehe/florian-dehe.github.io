@@ -4,7 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
-    <div>
+    <div style={{ height:"100vh" }}>
       <Navbar />
       <Outlet />
     </div>

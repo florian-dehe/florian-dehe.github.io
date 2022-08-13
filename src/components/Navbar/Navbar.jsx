@@ -1,19 +1,36 @@
-import NavbarLink from './NavbarLink'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
-import './Navbar.css'
+import { LinkContainer } from "react-router-bootstrap"
 
-function Navbar() {
+function MainNavbar() {
   return (
-    <nav className="navbar">
-      <NavbarLink title="Home" route="/" />
-      <NavbarLink title="About me" route="/about-me" />
-      <NavbarLink title="Projects" route="/projects" />
-      <NavbarLink title="Hobbies" route="/hobbies" />
-      <NavbarLink title="About this portfolio" route="/portfolio" />
-      <NavbarLink title="Contact" route="/contact" />
-    </nav>
+    <Navbar bg="light" expand="md">
+      <Container>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+          <Nav>
+            <LinkContainer to="">
+              <Nav.Link>Home</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="about-me">
+              <Nav.Link>About me</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="hobbies">
+              <Nav.Link>Hobbies</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="portfolio">
+              <Nav.Link>Portfiolio</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="contact">
+              <Nav.Link>Contact</Nav.Link>
+            </LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-
-export default Navbar;
+export default MainNavbar;
