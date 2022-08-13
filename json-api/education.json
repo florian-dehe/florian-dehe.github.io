@@ -4,41 +4,61 @@
       "id": 0,
       "title": "University of Technology of Troyes",
       "location": "Troyes, France",
-      "time": "Sept 2020 - present",
+      "time": "September 2020 - present",
       "logo": "images/Logo_UTT_2018.svg",
       "link": "https://www.utt.fr/english-version/academic-programs/informatics-and-information-systems-isi",
-      "description": [
+      "diploma": "Engineering Diploma in Software engineering",
+      "description": "description",
+      "skills": [
         {
           "id": 0,
-          "name": "Informatics and Information Systems"
+          "name": "Software Engineering"
         },
         {
           "id": 1,
-          "name": "Specialized in Software Engineering"
+          "name": "Project management"
         },
         {
           "id": 2,
-          "name": "Project Management approach"
+          "name": "Agile development"
+        },
+        {
+          "id": 3,
+          "name": "Unified Modelisation Language (UML)"
+        },
+        {
+          "id": 4,
+          "name": "Object Oriented Programmation (OOP)"
         }
       ]
     },
     {
-        "id": 1,
-        "title": "Erasmus Exchange - University of Southern Denmark",
-        "location": "Odense, Denmark",
-        "time": "Sept. 2021 - January 2022",
-        "logo": "images/sdulogo-uk-sort-feb2019.png",
-        "link": "https://www.sdu.dk/en",
-        "description": [
-          {
-            "id" : 0,
-            "name": "Master level in Computer Science"
-          },
-          {
-            "id" : 1,
-            "name": "Study topics: Data security, AI in games, Mobile, Software Engineering"
-          }
-        ]
+      "id": 1,
+      "title": "Erasmus Exchange - University of Southern Denmark",
+      "location": "Odense, Denmark",
+      "time": "September 2021 - January 2022",
+      "logo": "images/sdulogo-uk-sort-feb2019.png",
+      "link": "https://www.sdu.dk/en",
+      "diploma": "Msc in Computer Science",
+      "description": "description",
+      "skills": [
+        {
+          "id": 0,
+          "name": "Data Security"
+        },
+        {
+          "id": 1,
+          "name": "AI in games"
+        },
+        {
+          "id": 2,
+          "name": "Mobile development"
+        },
+        {
+          "id": 3,
+          "name": "Software Engineering"
+        }
+      ]
     }
   ]
 }

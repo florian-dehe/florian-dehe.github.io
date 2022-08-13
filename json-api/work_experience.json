@@ -1,0 +1,37 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "title": "Internship",
+      "job_title": "Intern",
+      "company": "KPMG Denmark",
+      "service": "Digital Innovation & Analytics",
+      "location": "Copenhagen, Denmark",
+      "time": "January 2022 - July 2022",
+      "logo": "images/logo_KPMG.png",
+      "description": "description",
+      "skills": [
+        {
+          "id": 0,
+          "name": "Software Engineering"
+        },
+        {
+          "id": 1,
+          "name": "Project management"
+        },
+        {
+          "id": 2,
+          "name": "Agile development"
+        },
+        {
+          "id": 3,
+          "name": "Unified Modelisation Language (UML)"
+        },
+        {
+          "id": 4,
+          "name": "Object Oriented Programmation (OOP)"
+        }
+      ]
+    }
+  ]
+}
