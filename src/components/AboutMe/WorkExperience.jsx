@@ -20,8 +20,8 @@ function WorkExperienceItemModal(props) {
         <Modal.Title>{ props.itemData.title }</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <div className="text-center mb-5">
-          <Image style={{ maxWidth: "30rem" }} src={props.itemData.logo}/>
+        <div className="text-center mb-5 p-2">
+          <Image src={props.itemData.logo} fluid style={{ maxHeight: "12rem" }}/>
         </div>
         <h2 className="mb-3">{props.itemData.title}</h2>
 
@@ -76,7 +76,9 @@ function WorkExperienceItem( { itemData } ) {
       <Card className="shadow m-3 h-100" style={{ height: "10rem" }} border="light">
         <Row>
           <Col>
-            <Image className="h-100 p-2" src={itemData.logo} fluid />
+            <div className="h-100 p-2 d-flex flex-column justify-content-center">
+              <Image src={itemData.logo} fluid />
+            </div>
           </Col>
           <Col>
             <Card.Body>

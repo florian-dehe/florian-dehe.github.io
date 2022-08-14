@@ -22,7 +22,7 @@ function AboutMe() {
     <Container className="mt-5" fluid="md">
       <h1 className="display-3 text-center py-5 mt-5">About me</h1>
 
-      <div className="fs-4 text-justify">
+      <div className="fs-4 text-center">
         {profile}
       </div>
 

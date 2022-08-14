@@ -50,7 +50,7 @@ function Skills() {
 
       <div>
         <Row>
-          <Col>
+          <Col md={6} sm={12}>
             { prog.map(
               (skill) => <ProgressBarSkill key={skill.id} skill={ skill }/>
             ) }
