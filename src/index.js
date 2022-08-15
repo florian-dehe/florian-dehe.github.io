@@ -10,7 +10,6 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import App from './App';
 import Home from './routes/Home';
 import Projects from './routes/Projects';
-import Portfolio from './routes/Portfolio';
 import AboutMe from './routes/AboutMe';
 import Hobbies from './routes/Hobbies';
 import Contact from './routes/Contact';
@@ -22,7 +21,6 @@ root.render(
       <Route path="/" element={ <App /> }>
         <Route path="" element={ <Home /> }/>
         <Route path="projects" element={ <Projects /> } />
-        <Route path="portfolio" element={ <Portfolio /> } />
         <Route path="about-me" element={ <AboutMe /> } />
         <Route path="hobbies" element={ <Hobbies /> } />
         <Route path="contact" element={ <Contact /> } />

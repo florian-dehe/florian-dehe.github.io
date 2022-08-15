@@ -1,9 +1,11 @@
 
+import Container from "react-bootstrap/Container"
+
 function Hobbies() {
   return (
-    <div>
-      <h1 className="title">Hobbies</h1>
-    </div>
+    <Container className="mt-5" fluid="md">
+      <h1 className="display-3 text-center py-5 mt-5">Hobbies</h1>
+    </Container>
   );
 }
 

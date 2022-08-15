@@ -20,8 +20,8 @@ function MainNavbar() {
             <LinkContainer to="hobbies">
               <Nav.Link>Hobbies</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="portfolio">
-              <Nav.Link>Portfiolio</Nav.Link>
+            <LinkContainer to="projects">
+              <Nav.Link>Projects</Nav.Link>
             </LinkContainer>
             <LinkContainer to="contact">
               <Nav.Link>Contact</Nav.Link>
