@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import Card from "react-bootstrap/Card"
+import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Modal from "react-bootstrap/Modal"
@@ -68,28 +69,24 @@ function ProjectItem( { itemdata } ) {
 
   return (
     <>
-      <Card className="shadow m-3 h-100" style={{ height: "10rem" }} border="light">
-        <Row>
-          <Col>
-            <div className="h-100 p-2 d-flex flex-column justify-content-center">
-              <Image src={itemdata.logo} fluid className="mx-auto" style={{ maxWidth: "10rem" }}/>
-            </div>
-          </Col>
-          <Col>
-            <Card.Body>
+      <Card className="shadow m-3 h-100" style={{ height: "9rem", width: "25rem"   }} border="light">
+        <Image className="p-2 mx-auto" src={ itemdata.logo } style={{ maxHeight: "14rem" }} />
+        <Card.Body>
+          <div className="d-flex flex-column justify-content-between h-100">
+            <div>
               <Card.Title className="mb-3">{ itemdata.title }</Card.Title>
 
               <Card.Subtitle className="text-muted mb-2"><FontAwesomeIcon icon={solid("calendar")}/>  {itemdata.time}</Card.Subtitle>
               <Card.Subtitle className="text-muted mb-2"><FontAwesomeIcon icon={solid("code-compare")}/>  {itemdata.status}</Card.Subtitle>
+            </div>
 
-              <Card.Text className="mt-3">{ itemdata.short_description }</Card.Text>
+            <Card.Text>{ itemdata.short_description }</Card.Text>
 
-              <Button variant="primary" className="mt-3" onClick={handleShow}>
-                More information
-              </Button>
-            </Card.Body>
-          </Col>
-        </Row>
+            <Button variant="primary" onClick={handleShow}>
+              More information
+            </Button>
+          </div>
+        </Card.Body>
       </Card>
       <ProjectItemModal show={showModal} onHide={handleClose} itemdata={itemdata} />
   </>
@@ -109,11 +106,13 @@ function ProjectList() {
   }, [])
 
   return (
-    <div className="mt-3 mx-auto" style={{ maxWidth: "55rem" }}>
-    { projects.map(
-      (item) => <ProjectItem key={item.id} itemdata={item}/>
-    ) }
-    </div>
+    <Container className="mt-3 mx-auto">
+      <Row className="row-cols-auto justify-content-center">
+        { projects.map(
+          (item) => <Col key={item.id} className="my-2"> <ProjectItem itemdata={item}/> </Col>
+        ) }
+      </Row>
+    </Container>
   );
 }
 
