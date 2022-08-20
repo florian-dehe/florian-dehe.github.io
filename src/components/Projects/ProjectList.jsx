@@ -70,7 +70,7 @@ function ProjectItem( { itemdata } ) {
   return (
     <>
       <Card className="shadow m-3 h-100" style={{ height: "9rem", width: "25rem"   }} border="light">
-        <Image className="p-2 mx-auto" src={ itemdata.logo } style={{ maxHeight: "14rem" }} />
+        <Image className="p-2 mx-auto h-100" src={ itemdata.logo } style={{ maxHeight: "14rem" }} />
         <Card.Body>
           <div className="d-flex flex-column justify-content-between h-100">
             <div>
@@ -93,17 +93,17 @@ function ProjectItem( { itemdata } ) {
   );
 }
 
-function ProjectList() {
+function ProjectList({ api_link }) {
 
   const [projects, setProjects] = useState([]);
 
   useEffect( () => {
 
-    fetch('json-api/projects.json')
+    fetch(api_link)
       .then((response) => response.json())
       .then((data) => setProjects(data.data));
 
-  }, [])
+  }, [api_link])
 
   return (
     <Container className="mt-3 mx-auto">

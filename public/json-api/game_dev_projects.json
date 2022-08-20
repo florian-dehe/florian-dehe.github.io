@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "title": "SpaceShipsBattle",
+      "time": "July 2020",
+      "logo": "images/spaceship.png",
+      "status": "Completed",
+      "link": "https://github.com/thecobaye54/SpaceShipsBattle",
+      "short_description": "Official repository for the Pygame series on my Youtube channel.",
+      "description": "This is the official repository of my Pygame series on Youtube. It consists in 8 episodes where I describe the different steps to recreate a 2D shooter game.",
+      "skills": [
+        {
+          "id": 0,
+          "name": "Pygame"
+        },
+        {
+          "id": 1,
+          "name": "Python"
+        },
+        {
+          "id": 2,
+          "name": "2D graphics"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Ruins Adventurer",
+      "time": "26-28 Feb. 2021 (11th Alakajam)",
+      "logo": "images/code-solid.svg",
+      "status": "Finished",
+      "link": "https://github.com/thecobaye54/RuinsAdventurer",
+      "short_description": "My entry for the 11th Alakajam.",
+      "description": "This is my participation for the 11th Alakajam. You discover ancient ruins as an adventurer but beware of the traps !",
+      "skills": [
+        {
+          "id": 0,
+          "name": "Godot"
+        },
+        {
+          "id": 1,
+          "name": "GDScript"
+        },
+        {
+          "id": 2,
+          "name": "Game development patterns"
+        },
+        {
+          "id": 3,
+          "name": "Game project management"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Pirates Treasure",
+      "time": "18-20 Sept. 2020 (10th Alakajam)",
+      "logo": "images/code-solid.svg",
+      "status": "Finished",
+      "link": "https://github.com/thecobaye54/PiratesTreasure",
+      "short_description": "My entry for the 10th Alakajam.",
+      "description": "This is my participation for the 10th Alakajam. The goal is to collect the more treasures just by going near them.",
+      "skills": [
+        {
+          "id": 0,
+          "name": "Godot"
+        },
+        {
+          "id": 1,
+          "name": "GDScript"
+        },
+        {
+          "id": 2,
+          "name": "Game development patterns"
+        },
+        {
+          "id": 3,
+          "name": "Game project management"
+        }
+      ]
+    }
+  ]
+}
