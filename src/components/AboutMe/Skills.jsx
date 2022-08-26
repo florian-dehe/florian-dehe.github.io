@@ -68,4 +68,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export { Skills, ProgressBarSkill, GlobalSkill };
