@@ -21,7 +21,7 @@ function Personality() {
   return (
     <Container fluid="sm">
       <Row>
-        <Col>
+        <Col md={6} sm={12}>
           <div className="h-100 d-flex flex-column justify-content-center text-center">
             <div>
               { globals.map( (skill) => <GlobalSkill key={skill.id} skill={ skill }/> ) }
