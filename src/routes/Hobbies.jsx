@@ -32,6 +32,25 @@ function Hobbies() {
       </div>
 
       <div className="my-5">
+        <h2 className="display-5"><FontAwesomeIcon icon={solid("book-open")} /> Comics</h2>
+
+        <div className="fs-4">
+          <p>
+            I like reading comics in my free time. I find very interesting the mix between the art
+            and the story behind the images. It gives an other dimension in the storytelling, something
+            similar that we can find in cinema and video games. I mostly read stories from the DC universe
+            which I like more than other comics series.
+          </p>
+          <p>
+            Because of this, I also really like cinema. It adds another layer of storytelling which allows
+            the spectator to receive the emotions transmitted by the movie and feel compassion for the main charater
+            for example. That is why, cinema has also a important place in the things that I like.
+          </p>
+        </div>
+
+      </div>
+
+      <div className="my-5">
         <h2 className="display-5"><FontAwesomeIcon icon={solid("gamepad")} /> Game Jams</h2>
         <GameJams />
       </div>
