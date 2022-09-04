@@ -15,7 +15,7 @@ function ContactLink(props) {
 
 function Contact() {
   return (
-    <Container className="mt-5" fluid="md">
+    <Container className="mt-5 h-75" fluid="md">
       <h1 className="display-3 text-center py-5 mt-5">Contact</h1>
 
       <h4>You can contact me via the different links listed here :</h4>
