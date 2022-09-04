@@ -21,7 +21,7 @@
       { "id": 10, "name": "PostgreSQL" },
       { "id": 11, "name": "Docker" },
       { "id": 12, "name": "Godot" },
-      { "id": 12, "name": "REST API" }
+      { "id": 13, "name": "REST API" }
     ],
     "programming": [
       { "id": 0, "name": "Java", "level": 85 },
