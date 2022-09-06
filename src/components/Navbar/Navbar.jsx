@@ -6,11 +6,11 @@ import { LinkContainer } from "react-router-bootstrap"
 
 function MainNavbar() {
   return (
-    <Navbar bg="light" expand="md">
+    <Navbar bg="secondary" variant="dark" expand="md" className="py-3">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-          <Nav>
+          <Nav variant="pills" className="fs-5">
             <LinkContainer to="">
               <Nav.Link>Home</Nav.Link>
             </LinkContainer>

@@ -1,5 +1,7 @@
 import { LinkContainer } from "react-router-bootstrap"
 
+import Button from "react-bootstrap/Button"
+
 function HomeHeader() {
   return (
     <div className="d-flex justify-content-center h-75">
@@ -8,11 +10,11 @@ function HomeHeader() {
           Hi, my name is
         </h2>
         <h1 className="display-1">
-          Florian Dehé
+          Florian DEHE
         </h1>
         <div className="d-flex justify-content-center">
           <LinkContainer to="/about-me">
-            <button type="button" className="btn btn-primary">Discover who I am</button>
+            <Button size="lg">Discover who I am</Button>
           </LinkContainer>
         </div>
       </div>
