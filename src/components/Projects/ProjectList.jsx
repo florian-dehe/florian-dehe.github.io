@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
@@ -80,7 +80,7 @@ function ProjectItem( { itemdata } ) {
               <Card.Subtitle className="text-muted mb-2"><FontAwesomeIcon icon={solid("code-compare")}/>  {itemdata.status}</Card.Subtitle>
             </div>
 
-            <Card.Text>{ itemdata.short_description }</Card.Text>
+            <Card.Text className="fs-5">{ itemdata.short_description }</Card.Text>
 
             <Button variant="primary" onClick={handleShow}>
               More information
@@ -93,22 +93,11 @@ function ProjectItem( { itemdata } ) {
   );
 }
 
-function ProjectList({ api_link }) {
-
-  const [projects, setProjects] = useState([]);
-
-  useEffect( () => {
-
-    fetch(api_link)
-      .then((response) => response.json())
-      .then((data) => setProjects(data.data));
-
-  }, [api_link])
-
+function ProjectList({ list_data }) {
   return (
     <Container className="mt-3 mx-auto">
       <Row className="row-cols-auto justify-content-center">
-        { projects.map(
+        { list_data.map(
           (item) => <Col key={item.id} className="my-2"> <ProjectItem itemdata={item}/> </Col>
         ) }
       </Row>

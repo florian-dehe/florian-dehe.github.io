@@ -1,11 +1,18 @@
 import { LinkContainer } from "react-router-bootstrap"
 
+import Image from "react-bootstrap/Image"
+
 import Button from "react-bootstrap/Button"
 
 function HomeHeader() {
   return (
     <div className="d-flex justify-content-center h-75">
       <div className="my-auto">
+        
+        <div className="mb-5 d-flex justify-content-center">
+          <Image src="images/profile.png" style={{ borderRadius: "50%", maxWidth: "20rem" }}/>
+        </div>
+        
         <h2>
           Hi, my name is
         </h2>

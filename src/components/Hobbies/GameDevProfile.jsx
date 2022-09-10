@@ -1,6 +1,8 @@
 
 import ProjectList from "../Projects/ProjectList"
 
+import gameDevProjects from "../../json-data/game_dev_projects.json"
+
 function GameDevProfile({ link }) {
   return (
     <div>
@@ -9,7 +11,7 @@ function GameDevProfile({ link }) {
         this link <a href={ link } target="_blank" rel="noreferrer">here</a>.
       </p>
 
-      <ProjectList api_link="json-api/game_dev_projects.json" />
+    <ProjectList list_data={ gameDevProjects.data } />
     </div>
   );
 }

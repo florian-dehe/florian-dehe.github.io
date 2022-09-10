@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-
 import Card from "react-bootstrap/Card"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
@@ -8,6 +6,8 @@ import Image from "react-bootstrap/Image"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"
+
+import gameJamsData from "../../json-data/game_jams.json"
 
 function GameJamItem( { itemdata } ) {
   return (
@@ -35,37 +35,20 @@ function GameJamItem( { itemdata } ) {
 }
 
 function GameJams() {
-
-  const [jams, setJams] = useState([]);
-  const [profileLink, setProfileLink] = useState("");
-  const [description, setDescription] = useState("");
-
-  useEffect( () => {
-
-    fetch('json-api/game_jams.json')
-      .then((response) => response.json())
-      .then((data) => {
-        setJams(data.data);
-        setProfileLink(data.jam_profile);
-        setDescription(data.description);
-      });
-
-  }, [])
-
   return (
     <div>
       <div className="fs-4">
         <p>
-          { description }
+          { gameJamsData.description }
         </p>
         <p>
-          <a href={ profileLink } target="_blank" rel="noreferrer">Here</a> is my profile on the
+          <a href={ gameJamsData.jam_profile } target="_blank" rel="noreferrer">Here</a> is my profile on the
           site 'Alakajam' that hosts game jams. You can also find more information below on the different
           games I produced.
         </p>
       </div>
       <Row className="row-cols-auto justify-content-center">
-        { jams.map(
+        { gameJamsData.data.map(
           (item) => <Col key={item.id} className="my-2"> <GameJamItem itemdata={item}/> </Col>
         ) }
       </Row>

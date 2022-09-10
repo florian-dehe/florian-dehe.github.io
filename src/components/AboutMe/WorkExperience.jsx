@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import Card from "react-bootstrap/Card"
 import Row from "react-bootstrap/Row"
@@ -12,6 +12,7 @@ import Badge from "react-bootstrap/Badge"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"
 
+import work_experience from "../../json-data/work_experience.json"
 
 function WorkExperienceItemModal(props) {
   return (
@@ -99,20 +100,9 @@ function WorkExperienceItem( { itemData } ) {
 }
 
 function WorkExperience() {
-
-  const [educationData, setEducationData] = useState([]);
-
-  useEffect( () => {
-
-    fetch('json-api/work_experience.json')
-      .then((response) => response.json())
-      .then((data) => setEducationData(data.data));
-
-  }, [])
-
   return (
     <div className="mt-3 mx-auto" style={{ maxWidth: "55rem" }}>
-    { educationData.map(
+      { work_experience.data.map(
       (item) => <WorkExperienceItem key={item.id} itemData={item}/>
     ) }
     </div>

@@ -6,6 +6,8 @@ import ProjectList from "../components/Projects/ProjectList"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"
 
+import projects from "../json-data/projects.json"
+
 function Projects() {
   return (
     <Container fluid="md">
@@ -31,7 +33,7 @@ function Projects() {
         <p>
           The list of the projects I worked on so far :
         </p>
-        <ProjectList api_link="json-api/projects.json" />
+        <ProjectList list_data={ projects.data } />
       </div>
 
     </Container>

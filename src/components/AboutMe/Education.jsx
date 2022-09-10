@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import Card from "react-bootstrap/Card"
 import Row from "react-bootstrap/Row"
@@ -12,6 +12,7 @@ import Badge from "react-bootstrap/Badge"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro"
 
+import education from "../../json-data/education.json"
 
 function EducationItemModal(props) {
   return (
@@ -96,20 +97,9 @@ function EducationItem( { itemData } ) {
 }
 
 function Education() {
-
-  const [educationData, setEducationData] = useState([]);
-
-  useEffect( () => {
-
-    fetch('json-api/education.json')
-      .then((response) => response.json())
-      .then((data) => setEducationData(data.data));
-
-  }, [])
-
   return (
     <div className="mt-3 mx-auto" style={{ maxWidth: "55rem" }}>
-    { educationData.map(
+      { education.data.map(
       (item) => <EducationItem key={item.id} itemData={item}/>
     ) }
     </div>

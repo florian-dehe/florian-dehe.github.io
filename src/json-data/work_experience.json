@@ -9,15 +9,15 @@
       "location": "Copenhagen, Denmark",
       "time": "January 2022 - July 2022",
       "logo": "images/logo_KPMG.png",
-      "description": "description",
+      "description": "My first internship as required to obtain my french engineering diploma. I helped developping a web application using Django.",
       "skills": [
         {
           "id": 0,
-          "name": "Software Engineering"
+          "name": "Web Application"
         },
         {
           "id": 1,
-          "name": "Project management"
+          "name": "Django"
         },
         {
           "id": 2,
@@ -25,7 +25,7 @@
         },
         {
           "id": 3,
-          "name": "Unified Modelisation Language (UML)"
+          "name": "PostgreSQL"
         },
         {
           "id": 4,

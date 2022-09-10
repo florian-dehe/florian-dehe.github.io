@@ -1,5 +1,4 @@
 {
-  "data" : {
     "global": [
       { "id": 0, "name": "Test driven development" },
       { "id": 1, "name": "Agile Software Development" },
@@ -31,5 +30,4 @@
       { "id": 4, "name": "Javascript", "level": 85 },
       { "id": 5, "name": "Web (HTML, CSS)", "level": 75 }
     ]
-  }
 }

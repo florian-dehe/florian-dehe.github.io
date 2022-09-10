@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer>
       <Container className="py-3 mt-5">
-        <p class="text-center text-muted border-top py-3">Made by <a href="https://github.com/florian-dehe"
+        <p className="text-center text-muted border-top py-3">Made by <a href="https://github.com/florian-dehe"
                                                                      target="_blank" rel="noreferrer">
                                                                     <FontAwesomeIcon icon={ brands("github") }/> florian-dehe
                                                                   </a>
