@@ -23,7 +23,9 @@ function YoutubeChannel() {
             <Row>
               <Col className="d-flex justify-content-center">
                 <div className="text-center d-inline-flex flex-column justify-content-center">
-                  <Image src={ youtubeData.channel_data.image } style={{ borderRadius: "50%" }}/>
+                  <div className="d-flex justify-content-center">
+                    <Image src={ youtubeData.channel_data.image } style={{ borderRadius: "50%", maxWidth: "12rem" }}/>
+                  </div>
                   <Card.Title className="my-3 fs-3">{ youtubeData.channel_data.name }</Card.Title>
                 </div>
               </Col>
