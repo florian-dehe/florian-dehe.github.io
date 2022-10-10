@@ -2,6 +2,58 @@
   "data": [
     {
       "id": 0,
+      "title": "My UTT",
+      "time": "Sept 2022 - present",
+      "logo": "images/code-solid.svg",
+      "status": "V2 Under development",
+      "link": "https://github.com/ungdev/etuutt-mobile",
+      "short_description": "Student app for the student website of my school.",
+      "description": "I restarted the development of the new version of the application related to the student website of my school",
+      "skills": [
+        {
+          "id": 0,
+          "name": "React Native"
+        },
+        {
+          "id": 1,
+          "name": "Typescript"
+        },
+        {
+          "id": 2,
+          "name": "Mobile App"
+        },
+        {
+          "id": 3,
+          "name": "Student Organization"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "UTT Arena - Tournament organizer",
+      "time": "December 2, 3 and 4 of 2022",
+      "logo": "images/logo_UA.png",
+      "status": "Event",
+      "link": "https://arena.utt.fr/",
+      "short_description": "630 players, 8 tournaments, prizes to be won and tournaments with live commentary by the casters!",
+      "description": "The UTT Arena is back this year for its 20th edition! From a simple examination room at the UTT to 7500m² of gaming at the Troyes Exhibition Centre, the Cube, via the games festival, the UTT Arena has evolved to offer better quality tournaments to its players every year!",
+      "skills": [
+        {
+          "id": 0,
+          "name": "Video Games"
+        },
+        {
+          "id": 1,
+          "name": "Student Event"
+        },
+        {
+          "id": 2,
+          "name": "Student Organization"
+        }
+      ]
+    },
+    {
+      "id": 2,
       "title": "Light 2D Engine",
       "time": "January 2021 - June 2021",
       "logo": "images/logo_light2d.png",
@@ -29,7 +81,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 3,
       "title": "Brainstorm Me!",
       "time": "August 2022 - present",
       "logo": "images/code-solid.svg",
@@ -57,7 +109,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 4,
       "title": "Comics Finder",
       "time": "May 2021 - present",
       "logo": "images/code-solid.svg",

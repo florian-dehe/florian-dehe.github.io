@@ -2,7 +2,40 @@
   "data": [
     {
       "id": 0,
-      "title": "Internship",
+      "title": "Accidental Quality - Backend Developer",
+      "job_title": "Student Job (15h/week)",
+      "company": "Accidental Quality",
+      "service": "Backend Development",
+      "location": "Remote / Denmark",
+      "time": "Sept 2022 - present",
+      "logo": "images/code-solid.svg",
+      "description": "This is a part time job alongside my studies. I am doing backend development related to DevOps with the use of TDD.",
+      "skills": [
+        {
+          "id": 0,
+          "name": "Web Application"
+        },
+        {
+          "id": 1,
+          "name": "Ruby"
+        },
+        {
+          "id": 2,
+          "name": "Ruby on Rails"
+        },
+        {
+          "id": 3,
+          "name": "DevOps"
+        },
+        {
+          "id": 4,
+          "name": "Test Driven Development (TDD)"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "title": "Intern - Digital Innovation & Analytics",
       "job_title": "Intern",
       "company": "KPMG Denmark",
       "service": "Digital Innovation & Analytics",

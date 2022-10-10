@@ -78,7 +78,7 @@ function WorkExperienceItem( { itemData } ) {
         <Row>
           <Col>
             <div className="h-100 p-2 d-flex flex-column justify-content-center">
-              <Image src={itemData.logo} fluid />
+              <Image src={itemData.logo} fluid style={{ maxHeight: "12rem" }} />
             </div>
           </Col>
           <Col>
