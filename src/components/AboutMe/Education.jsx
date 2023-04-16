@@ -18,40 +18,43 @@ function EducationItemModal(props) {
   return (
     <Modal { ...props } size="lg" centered>
       <Modal.Header closeButton>
-        <Modal.Title>{ props.itemData.title }</Modal.Title>
+        <Modal.Title>{ props.item.title }</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <div className="text-center mb-5 p-2">
-          <Image src={props.itemData.logo} fluid style={{ maxHeight: "12rem"}}/>
+          <Image src={props.item.logo} fluid style={{ maxWidth: "12rem"}}/>
         </div>
-        <h2 className="mb-3">{props.itemData.title}</h2>
+        <h2 className="mb-3">{props.item.title}</h2>
 
         <div>
           <p className="mb-2">
-            <strong><FontAwesomeIcon icon={solid("location-dot")}/> Location : </strong>  {props.itemData.location}
+            <strong><FontAwesomeIcon icon={solid("location-dot")}/> Location : </strong>  {props.item.location}
           </p>
           <p className="mb-2">
-            <strong><FontAwesomeIcon icon={solid("calendar")}/>  Duration : </strong> {props.itemData.time}
+            <strong><FontAwesomeIcon icon={solid("calendar")}/>  Duration : </strong> {props.item.time}
           </p>
           <p className="mb-2">
-            <strong><FontAwesomeIcon icon={solid("book-open")}/>  Diploma : </strong> {props.itemData.diploma}
+            <strong><FontAwesomeIcon icon={solid("book-open")}/>  Diploma : </strong> {props.item.diploma}
           </p>
         </div>
 
-        <p className="my-3">{props.itemData.description}</p>
+        <p className="my-3">{props.item.description}</p>
 
         { /* Skills */ }
         <div>
           <p className="fs-5">
-            { props.itemData.skills.map(
+            { props.item.skills.map(
               (skill) => <Badge key={skill.id} bg="secondary" className="mx-1">{ skill.name }</Badge>
             ) }
           </p>
         </div>
 
-        <Button variant="primary" target="_blank" rel="noreferrer" href={props.itemData.link}>
-          Link <FontAwesomeIcon icon={solid("arrow-up-right-from-square")} />
-        </Button>
+       { props.item.link && (
+            <Button variant="primary" target="_blank" rel="noreferrer" href={props.item.link}>
+                Link <FontAwesomeIcon icon={solid("arrow-up-right-from-square")} />
+            </Button>
+         )
+       }
 
       </Modal.Body>
       <Modal.Footer>
@@ -63,7 +66,7 @@ function EducationItemModal(props) {
   );
 }
 
-function EducationItem( { itemData } ) {
+function EducationItem( { item } ) {
 
   const [ showModal, setShowModal ] = useState(false);
 
@@ -76,14 +79,14 @@ function EducationItem( { itemData } ) {
         <Row>
           <Col>
             <div className="h-100 p-2 d-flex flex-column justify-content-center">
-              <Image src={itemData.logo} fluid />
+              <Image src={item.logo} fluid style={{ maxHeight: "12rem" }}/>
             </div>
           </Col>
           <Col>
             <Card.Body>
-              <Card.Title className="mb-3">{ itemData.title }</Card.Title>
-              <Card.Subtitle className="text-muted mb-2"><FontAwesomeIcon icon={solid("location-dot")}/>  {itemData.location}</Card.Subtitle>
-              <Card.Subtitle className="text-muted mb-2"><FontAwesomeIcon icon={solid("calendar")}/>  {itemData.time}</Card.Subtitle>
+              <Card.Title className="mb-3">{ item.title }</Card.Title>
+              <Card.Subtitle className="text-muted mb-2"><FontAwesomeIcon icon={solid("location-dot")}/>  {item.location}</Card.Subtitle>
+              <Card.Subtitle className="text-muted mb-2"><FontAwesomeIcon icon={solid("calendar")}/>  {item.time}</Card.Subtitle>
               <Button variant="primary" className="mt-3" onClick={handleShow}>
                 More information
               </Button>
@@ -91,7 +94,7 @@ function EducationItem( { itemData } ) {
           </Col>
         </Row>
       </Card>
-      <EducationItemModal show={showModal} onHide={handleClose} itemData={itemData} />
+      <EducationItemModal show={showModal} onHide={handleClose} item={item} />
   </>
   );
 }
@@ -100,7 +103,7 @@ function Education() {
   return (
     <div className="mt-3 mx-auto" style={{ maxWidth: "55rem" }}>
       { education.data.map(
-      (item) => <EducationItem key={item.id} itemData={item}/>
+      (item) => <EducationItem key={item.id} item={item}/>
     ) }
     </div>
   );

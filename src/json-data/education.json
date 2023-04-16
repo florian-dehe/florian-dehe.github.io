@@ -8,7 +8,7 @@
       "logo": "images/Logo_UTT_2018.svg",
       "link": "https://www.utt.fr/english-version/academic-programs/informatics-and-information-systems-isi",
       "diploma": "Engineering Diploma in Software engineering",
-      "description": "French engineering school where I am studying to get an french engineer diploma. Here I study mostly Software Engineering.",
+      "description": "French engineering school where I am studying to get an French Engineer diploma (Master equivalent). Here I study mostly Software Engineering.",
       "skills": [
         {
           "id": 0,
@@ -57,6 +57,50 @@
         {
           "id": 3,
           "name": "Software Engineering"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Preparation Classes - Engineering Sciences / Physics",
+      "location": "Belfort, France",
+      "time": "September 2018 - July 2020",
+      "logo": "images/user-graduate-solid.svg",
+      "link": null,
+      "diploma": "Preparation Classes",
+      "description": "2 years of preparation as required for the French Engineering diploma. My speciality was Engineering Sciences & Physics. There are also a big part of mathematics as well.",
+      "skills": [
+        {
+          "id": 0,
+          "name": "Engineering Sciences"
+        },
+        {
+          "id": 1,
+          "name": "Physics"
+        },
+        {
+          "id": 2,
+          "name": "Mathematics"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Baccalaureat in Engineering Sciences",
+      "location": "Belfort, France",
+      "time": "July 2018",
+      "logo": "images/user-graduate-solid.svg",
+      "link": null,
+      "diploma": "Baccalaureat",
+      "description": "Highschool diploma",
+      "skills": [
+        {
+          "id": 0,
+          "name": "Engineering Sciences"
+        },
+        {
+          "id": 1,
+          "name": "Physics"
         }
       ]
     }

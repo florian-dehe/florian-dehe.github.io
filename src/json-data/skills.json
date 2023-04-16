@@ -2,7 +2,7 @@
     "global": [
       { "id": 0, "name": "Test driven development" },
       { "id": 1, "name": "Agile Software Development" },
-      { "id": 2, "name": "Object Oriented Programming (OOP)" },
+      { "id": 2, "name": "DevOps Understanding (Jenkins & Kube)" },
       { "id": 3, "name": "Unified Modelling Language (UML)" },
       { "id": 4, "name": "Game Development" }
     ],
@@ -12,22 +12,23 @@
       { "id": 2, "name": "React.js" },
       { "id": 3, "name": "Android" },
       { "id": 4, "name": "Linux"},
-      { "id": 5, "name": "Git / Subversion" },
+      { "id": 5, "name": "Git" },
       { "id": 6, "name": "Django" },
-      { "id": 7, "name": "Django Rest Framework" },
-      { "id": 8, "name": "Bootstrap CSS" },
+      { "id": 7, "name": "Ruby on Rails" },
+      { "id": 8, "name": "Kafka" },
       { "id": 9, "name": "Node.js" },
       { "id": 10, "name": "PostgreSQL" },
       { "id": 11, "name": "Docker" },
       { "id": 12, "name": "Godot" },
-      { "id": 13, "name": "REST API" }
+      { "id": 13, "name": "Jenkins" },
+      { "id": 14, "name": "Kubernetes" }
     ],
     "programming": [
-      { "id": 0, "name": "Java", "level": 85 },
-      { "id": 1, "name": "C++", "level": 70 },
-      { "id": 2, "name": "C#", "level": 70 },
-      { "id": 3, "name": "Python", "level": 95 },
-      { "id": 4, "name": "Javascript", "level": 85 },
-      { "id": 5, "name": "Web (HTML, CSS)", "level": 75 }
+      { "id": 0, "name": "Java", "level": 90 },
+      { "id": 1, "name": "C++", "level": 80 },
+      { "id": 2, "name": "C#", "level": 85 },
+      { "id": 3, "name": "Python", "level": 80 },
+      { "id": 4, "name": "Javascript / Typescript", "level": 75 },
+      { "id": 5, "name": "Go", "level": 70 }
     ]
 }

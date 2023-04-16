@@ -18,38 +18,38 @@ function WorkExperienceItemModal(props) {
   return (
     <Modal { ...props } size="lg" centered>
       <Modal.Header closeButton>
-        <Modal.Title>{ props.itemData.title }</Modal.Title>
+        <Modal.Title>{ props.item.title }</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <div className="text-center mb-5 p-2">
-          <Image src={props.itemData.logo} fluid style={{ maxHeight: "12rem" }}/>
+          <Image src={props.item.logo} fluid style={{ maxHeight: "12rem" }}/>
         </div>
-        <h2 className="mb-3">{props.itemData.title}</h2>
+        <h2 className="mb-3">{props.item.title}</h2>
 
         <div>
           <p className="mb-2">
-            <strong><FontAwesomeIcon icon={solid("briefcase")}/> Job title : </strong>  {props.itemData.job_title}
+            <strong><FontAwesomeIcon icon={solid("briefcase")}/> Job title : </strong>  {props.item.job_title}
           </p>
           <p className="mb-2">
-            <strong><FontAwesomeIcon icon={solid("building")}/> Company : </strong>  {props.itemData.company}
+            <strong><FontAwesomeIcon icon={solid("building")}/> Company : </strong>  {props.item.company}
           </p>
           <p className="mb-2">
-            <strong><FontAwesomeIcon icon={solid("building")}/> Service : </strong>  {props.itemData.service}
+            <strong><FontAwesomeIcon icon={solid("building")}/> Service : </strong>  {props.item.service}
           </p>
           <p className="mb-2">
-            <strong><FontAwesomeIcon icon={solid("location-dot")}/> Location : </strong>  {props.itemData.location}
+            <strong><FontAwesomeIcon icon={solid("location-dot")}/> Location : </strong>  {props.item.location}
           </p>
           <p className="mb-2">
-            <strong><FontAwesomeIcon icon={solid("calendar")}/>  Duration : </strong> {props.itemData.time}
+            <strong><FontAwesomeIcon icon={solid("calendar")}/>  Duration : </strong> {props.item.time}
           </p>
         </div>
 
-        <p className="my-3">{props.itemData.description}</p>
+        <p className="my-3">{props.item.description}</p>
 
         { /* Skills */ }
         <div>
           <p className="fs-5">
-            { props.itemData.skills.map(
+            { props.item.skills.map(
               (skill) => <Badge key={skill.id} bg="secondary" className="mx-1">{ skill.name }</Badge>
             ) }
           </p>
@@ -65,7 +65,7 @@ function WorkExperienceItemModal(props) {
   );
 }
 
-function WorkExperienceItem( { itemData } ) {
+function WorkExperienceItem( { item } ) {
 
   const [ showModal, setShowModal ] = useState(false);
 
@@ -77,16 +77,16 @@ function WorkExperienceItem( { itemData } ) {
       <Card className="shadow m-3 h-100" style={{ height: "10rem" }} border="light">
         <Row>
           <Col>
-            <div className="h-100 p-2 d-flex flex-column justify-content-center">
-              <Image src={itemData.logo} fluid style={{ maxHeight: "12rem" }} />
+            <div className="h-100 p-2 d-flex flex-row justify-content-center">
+              <Image src={item.logo} fluid style={{ maxHeight: "12rem" }} />
             </div>
           </Col>
           <Col>
             <Card.Body>
-              <Card.Title className="mb-3">{ itemData.title }</Card.Title>
-              <Card.Subtitle className="text-muted mb-2"><FontAwesomeIcon icon={solid("building")}/>  {itemData.company}</Card.Subtitle>
-              <Card.Subtitle className="text-muted mb-2"><FontAwesomeIcon icon={solid("location-dot")}/>  {itemData.location}</Card.Subtitle>
-              <Card.Subtitle className="text-muted mb-2"><FontAwesomeIcon icon={solid("calendar")}/>  {itemData.time}</Card.Subtitle>
+              <Card.Title className="mb-3">{ item.title }</Card.Title>
+              <Card.Subtitle className="text-muted mb-2"><FontAwesomeIcon icon={solid("building")}/>  {item.company}</Card.Subtitle>
+              <Card.Subtitle className="text-muted mb-2"><FontAwesomeIcon icon={solid("location-dot")}/>  {item.location}</Card.Subtitle>
+              <Card.Subtitle className="text-muted mb-2"><FontAwesomeIcon icon={solid("calendar")}/>  {item.time}</Card.Subtitle>
               <Button variant="primary" className="mt-3" onClick={handleShow}>
                 More information
               </Button>
@@ -94,7 +94,7 @@ function WorkExperienceItem( { itemData } ) {
           </Col>
         </Row>
       </Card>
-      <WorkExperienceItemModal show={showModal} onHide={handleClose} itemData={itemData} />
+      <WorkExperienceItemModal show={showModal} onHide={handleClose} item={item} />
   </>
   );
 }
@@ -103,7 +103,7 @@ function WorkExperience() {
   return (
     <div className="mt-3 mx-auto" style={{ maxWidth: "55rem" }}>
       { work_experience.data.map(
-      (item) => <WorkExperienceItem key={item.id} itemData={item}/>
+      (item) => <WorkExperienceItem key={item.id} item={item}/>
     ) }
     </div>
   );

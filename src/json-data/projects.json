@@ -2,29 +2,29 @@
   "data": [
     {
       "id": 0,
-      "title": "My UTT",
-      "time": "Sept 2022 - present",
+      "title": "Comics Finder",
+      "time": "May 2021 - present",
       "logo": "images/code-solid.svg",
-      "status": "V2 Under development",
-      "link": "https://github.com/ungdev/etuutt-mobile",
-      "short_description": "Student app for the student website of my school.",
-      "description": "I restarted the development of the new version of the application related to the student website of my school",
+      "status": "Under development",
+      "link": "https://github.com/florian-dehe/comics-finder-svelte",
+      "short_description": "Searches comics on a simple data set. Uses SvelteKit & Django REST Framework",
+      "description": "This project came to me when I started having a good collection of comics. It was also a good start to make my very first Web App.",
       "skills": [
         {
           "id": 0,
-          "name": "React Native"
+          "name": "REST API"
         },
         {
           "id": 1,
-          "name": "Typescript"
+          "name": "Svelte"
         },
         {
           "id": 2,
-          "name": "Mobile App"
+          "name": "Javascript"
         },
         {
           "id": 3,
-          "name": "Student Organization"
+          "name": "Python"
         }
       ]
     },
@@ -110,33 +110,29 @@
     },
     {
       "id": 4,
-      "title": "Comics Finder",
-      "time": "May 2021 - present",
+      "title": "My UTT",
+      "time": "Sept 2022 - Jan 2023",
       "logo": "images/code-solid.svg",
-      "status": "Under development",
-      "link": "https://github.com/florian-dehe/comics-finder-next",
-      "short_description": "Searches comics on a simple data set.",
-      "description": "This project came to me when I started having a good collection of comics. It was also a good start to make my very first Web App.",
+      "status": "V2 Under development",
+      "link": "https://github.com/ungdev/etuutt-mobile",
+      "short_description": "Student app for the student website of my school.",
+      "description": "I restarted the development of the new version of the application related to the student website of my school",
       "skills": [
         {
           "id": 0,
-          "name": "REST API"
+          "name": "React Native"
         },
         {
           "id": 1,
-          "name": "React.js"
+          "name": "Typescript"
         },
         {
           "id": 2,
-          "name": "Javascript"
+          "name": "Mobile App"
         },
         {
           "id": 3,
-          "name": "JSX"
-        },
-        {
-          "id": 4,
-          "name": "Python"
+          "name": "Student Organization"
         }
       ]
     }

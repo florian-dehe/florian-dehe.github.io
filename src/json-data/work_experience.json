@@ -2,13 +2,42 @@
   "data": [
     {
       "id": 0,
+      "title": "Software Engineer Intern",
+      "job_title": "Full Time Internship",
+      "company": "Capgemini Deutschland",
+      "service": "Cloud & Custom Applications",
+      "location": "Berlin, Germany",
+      "time": "February 2023 - July 2023",
+      "logo": "images/capgemini-logo.png",
+      "description": "This is my end-of-studies internship that closes my French Engineering diploma (equivalent of Master). I am doing backend development with microservices",
+      "skills": [
+        {
+          "id": 0,
+          "name": "Microservices Architecture"
+        },
+        {
+          "id": 1,
+          "name": "Java"
+        },
+        {
+          "id": 2,
+          "name": "Cloud"
+        },
+        {
+          "id": 3,
+          "name": "DevOps"
+        }
+      ]
+    },
+    {
+      "id": 1,
       "title": "Accidental Quality - Backend Developer",
       "job_title": "Student Job (15h/week)",
       "company": "Accidental Quality",
       "service": "Backend Development",
       "location": "Remote / Denmark",
-      "time": "Sept 2022 - present",
-      "logo": "images/code-solid.svg",
+      "time": "Sept 2022 - January 2023",
+      "logo": "images/logo-accidental-quality.svg",
       "description": "This is a part time job alongside my studies. I am doing backend development related to DevOps with the use of TDD.",
       "skills": [
         {
@@ -34,7 +63,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 2,
       "title": "Intern - Digital Innovation & Analytics",
       "job_title": "Intern",
       "company": "KPMG Denmark",
