@@ -30,8 +30,8 @@ function Contact() {
           <FontAwesomeIcon icon={ brands("github") }/> florian-dehe
         </ContactLink>
 
-        <ContactLink link="mailto:florian.dehe@utt.fr" >
-          <FontAwesomeIcon icon={ solid("envelope") }/> florian.dehe@utt.fr
+        <ContactLink link="mailto:florian.dehe@gmail.com" >
+          <FontAwesomeIcon icon={ solid("envelope") }/> florian.dehe@gmail.com
         </ContactLink>
 
       </div>
